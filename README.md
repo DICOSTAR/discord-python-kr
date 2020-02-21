@@ -1,6 +1,3 @@
-    async def on_message(self: object, message: object) -> object:
-        if message.author == self.user:
-            return
 ****c# 앞에 c를 삭제해주세요. 깃허브는 async부터 소스로 인식하지만 c#이 시작되는데 부터가 전부 소스입니다.
 ****엔터라고 써놓은 부분은 엔터눌러서 줄갈라주세요. 엔터 치고 (엔터) 지우기*****
 
