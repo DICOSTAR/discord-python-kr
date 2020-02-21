@@ -1,23 +1,24 @@
-****c# 앞에 c를 삭제해주세요. 깃허브는 async부터 소스로 인식하지만 c#이 시작되는데 부터가 전부 소스입니다.****
+****c# 앞에 c를 삭제해주세요. 깃허브는 async부터 소스로 인식하지만 c#이 시작되는데 부터가 전부 소스입니다.
+****엔터라고 써놓은 부분은 엔터눌러서 줄갈라주세요. 엔터 치고 (엔터) 지우기
 
 
 c# 유저를 태그하여 밴시키고 뮤트시키는 방식보다 유저id가 훨씬 낫습니다. 유저가 서버를 나갔더라도 id를 입력해 차단가능합니다.
 c# 문의 : 뗈쁉#2651
 
 
-import discord
- c# ↑pip install 필요 모듈 (cmd에 pip install discord 검색)
-import datetime
-import asyncio
-import random
-import time
+import discord(엔터)
+ c# ↑pip install 필요 모듈 (cmd에 pip install discord 검색)(엔터)
+import datetime(엔터)
+import asyncio(엔터)
+import random(엔터)
+import time(엔터)
 
-class MyClient(discord.Client):
-    async def on_ready(self):
-        assert isinstance(self.user, object)
-        print('봇이 성공적으로 부팅되었습니다.', self.user)
-        game = discord.Game("활동상태에 표시할 게임이름을 써주세요")
-        await client.change_presence(status=discord.Status.online, activity=game)
+class MyClient(discord.Client):(엔터)
+    async def on_ready(self):(엔터)
+        assert isinstance(self.user, object)(엔터)
+        print('봇이 성공적으로 부팅되었습니다.', self.user)(엔터)
+        game = discord.Game("활동상태에 표시할 게임이름을 써주세요")(엔터)
+        await client.change_presence(status=discord.Status.online, activity=game)(엔터)
 
     async def on_message(self: object, message: object) -> object:
         if message.author == self.user:
@@ -98,5 +99,5 @@ class MyClient(discord.Client):
             print('밴된 유저가 발생하였습니다.')
 
 
-client = MyClient()
+client = MyClient()(엔터)
 client.run('봇토큰을 입력하세요.)
